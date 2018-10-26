@@ -1,0 +1,21 @@
+spring:
+   profiles:
+      active: dev
+   datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://103.45.98.220:3306/killen?characterEncoding=utf8&useSSL=true
+      username: root
+      password: zyphhxx18
+   thymeleaf:
+      cache: false
+      check-template-location: true
+      content-type: text/html
+      enabled: true
+      encoding: UTF-8
+      mode: HTML5
+   mvc:
+      static-path-pattern: /static/**
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
